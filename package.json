@@ -1,8 +1,8 @@
 {
   "name": "html2haml",
   "main": "./lib/html2haml",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "Convert html selection to haml.",
   "repository": "https://github.com/jaunkst/atom-html2haml.git",
   "license": "MIT",
   "engines": {
