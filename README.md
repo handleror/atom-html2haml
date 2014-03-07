@@ -1,6 +1,6 @@
 # Html2Haml Package for Atom.io
 
-Converts files, selection and clipboard content from HTML or ERB to HAML using http://html2haml.heroku.com API
+Converts selection from HTML to HAML using http://html2haml.heroku.com API
 
 Select html to convert to haml. Open the Command Palette (cmd-shift-P). Select Html2Haml: Convert
 
