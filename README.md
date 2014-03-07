@@ -1,4 +1,4 @@
-# html2haml Package for Atom.io
+# Html2Haml Package for Atom.io
 
 Converts files, selection and clipboard content from HTML or ERB to HAML using http://html2haml.heroku.com API
 
