@@ -3,7 +3,7 @@
   "main": "./lib/html2haml",
   "version": "0.0.1",
   "description": "Convert html selection to haml.",
-  "repository": "https://github.com/jaunkst/atom-html2haml.git",
+  "repository": "https://github.com/jaunkst/atom-html2haml",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
