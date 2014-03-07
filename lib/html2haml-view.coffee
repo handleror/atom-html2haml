@@ -6,8 +6,7 @@ class Html2hamlView extends View
     @div class: 'html2haml overlay from-top', =>
       @div "The Html2haml package is Alive! It's ALIVE!", class: "message"
 
-  # initialize: (serializeState) ->
-  #   atom.workspaceView.command "html2haml:convert", => @convert()
+  initialize: (serializeState) ->
 
   convert: ->
     editor = atom.workspace.activePaneItem
@@ -32,7 +31,6 @@ class Html2hamlView extends View
     callback = (response) ->
       str = ""
       response.on "data", (chunk) ->
-
         str += chunk
         return
 
@@ -50,16 +48,16 @@ class Html2hamlView extends View
     request.write(post_data, encoding = 'utf8')
 
   # Returns an object that can be retrieved when package is activated
-  # serialize: ->
+  serialize: ->
 
   # Tear down any state and detach
   destroy: ->
     @detach()
 
-  # toggle: ->
-  #   console.log "Html2hamlView was toggledx!"
-  #
-  #   if @hasParent()
-  #     @detach()
-  #   else
-  #     atom.workspaceView.append(this)
+  toggle: ->
+    console.log "Html2hamlView was toggled!"
+
+    if @hasParent()
+      @detach()
+    else
+      atom.workspaceView.append(this)

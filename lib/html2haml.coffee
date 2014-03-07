@@ -4,14 +4,14 @@ module.exports =
   html2hamlView: null
 
   activate: (state) ->
-    # @html2hamlView = new Html2hamlView(state.html2hamlViewState)
+    @html2hamlView = new Html2hamlView(state.html2hamlViewState)
     atom.workspaceView.command "html2haml:convert", => @convert()
 
   deactivate: ->
-    # @html2hamlView.destroy()
+    @html2hamlView.destroy()
 
   serialize: ->
-    # html2hamlViewState: @html2hamlView.serialize()
+    html2hamlViewState: @html2hamlView.serialize()
 
   convert: ->
     editor = atom.workspace.activePaneItem
