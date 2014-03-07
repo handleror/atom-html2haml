@@ -1,16 +1,16 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.overlayer':
-      'Enable html2haml': 'html2haml:toggle'
+  # '.overlayer':
+  #     'Enable html2haml': 'html2haml:toggle'
 
-'menu': [
-  {
-    'label': 'Packages'
-    'submenu': [
-      'label': 'html2haml'
-      'submenu': [
-        { 'label': 'Toggle', 'command': 'html2haml:toggle' }
-      ]
-    ]
-  }
-]
+# 'menu': [
+#   {
+#     'label': 'Packages'
+#     'submenu': [
+#       'label': 'html2haml'
+#       'submenu': [
+#         { 'label': 'Toggle', 'command': 'html2haml:toggle' }
+#       ]
+#     ]
+#   }
+# ]

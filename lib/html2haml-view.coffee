@@ -54,10 +54,10 @@ class Html2hamlView extends View
   destroy: ->
     @detach()
 
-  toggle: ->
-    console.log "Html2hamlView was toggled!"
-
-    if @hasParent()
-      @detach()
-    else
-      atom.workspaceView.append(this)
+  # toggle: ->
+  #   console.log "Html2hamlView was toggled!"
+  #
+  #   if @hasParent()
+  #     @detach()
+  #   else
+  #     atom.workspaceView.append(this)
