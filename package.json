@@ -2,12 +2,15 @@
   "name": "html2haml",
   "main": "./lib/html2haml",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "repository": "https://github.com/atom/html2haml",
+  "description": "Converts selection from HTML to HAML using http://html2haml.heroku.com API",
+  "repository": "https://github.com/jaunkst/atom-html2haml",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
+  "readme": "# Select html to convert to haml. \n Open the Command Palette (cmd-shift-P). \n Select Html2Haml: Convert\n",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/jaunkst/atom-html2haml",
   "dependencies": {
   }
 }
