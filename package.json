@@ -3,7 +3,7 @@
   "main": "./lib/html2haml",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "repository": "https://github.com/jaunkst/atom-html2haml",
+  "repository": "https://github.com/jaunkst/atom-html2haml.git",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
