@@ -40,8 +40,7 @@ module.exports =
         str += chunk
         return
 
-      response.on "end", ->
-        console.log str
+      response.on "close", ->
         result = JSON.parse(str)
         editor.insertText(result.page.haml)
         return
