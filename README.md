@@ -1,6 +1,6 @@
 # Html2Haml Package for Atom.io
 
-Converts selection from HTML to HAML using http://html2haml.heroku.com API
+Converts selection from HTML to HAML using html2haml-attributes.herokuapp.com API
 
 Select html to convert to haml. Open the Command Palette (cmd-shift-P). Select Html2Haml: Convert
 
