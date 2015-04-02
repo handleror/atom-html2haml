@@ -1,17 +1,28 @@
-Html2hamlView = require './html2haml-view'
+# Html2hamlView = require './html2haml-view'
+{CompositeDisposable} = require 'atom'
 
-module.exports =
-  html2hamlView: null
+module.exports = Html2haml =
+  # html2hamlView: null
+  modalPanel: null
+  subscriptions: null
 
   activate: (state) ->
-    @html2hamlView = new Html2hamlView(state.html2hamlViewState)
-    atom.workspaceView.command "html2haml:convert", => @convert()
+    # @html2hamlView = new Html2hamlView(state.html2hamlViewState)
+    # @modalPanel = atom.workspace.addModalPanel(item: @html2hamlView.getElement(), visible: false)
+
+    # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
+    @subscriptions = new CompositeDisposable
+
+    # Register command that toggles this view
+    @subscriptions.add atom.commands.add 'atom-workspace', 'html2haml:convert': => @convert()
 
   deactivate: ->
-    @html2hamlView.destroy()
+    @modalPanel.destroy()
+    @subscriptions.dispose()
+    # @html2hamlView.destroy()
 
   serialize: ->
-    html2hamlViewState: @html2hamlView.serialize()
+    # html2hamlViewState: @html2hamlView.serialize()
 
   convert: ->
     editor = atom.workspace.activePaneItem
