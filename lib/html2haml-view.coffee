@@ -7,7 +7,6 @@ class Html2hamlView extends View
       @div "The Html2haml package is Alive! It's ALIVE!", class: "message"
 
   initialize: (serializeState) ->
-    console.log 'init'
 
   convert: ->
     editor = atom.workspace.activePaneItem
