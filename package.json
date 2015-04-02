@@ -1,36 +1,12 @@
 {
   "name": "html2haml",
   "main": "./lib/html2haml",
-  "version": "0.6.0",
+  "version": "0.5.0",
   "description": "Convert html selection to haml.",
   "repository": "https://github.com/jaunkst/atom-html2haml",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {},
-  "readme": "# Html2Haml Package for Atom.io\n\nConverts selection from HTML to HAML using html2haml-attributes.herokuapp.com API\n\nSelect html to convert to haml. Open the Command Palette (cmd-shift-P). Select Html2Haml: Convert\n\n![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)\n",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/jaunkst/atom-html2haml/issues"
-  },
-  "homepage": "https://github.com/jaunkst/atom-html2haml",
-  "_id": "html2haml@0.6.0",
-  "_shasum": "d67c8acf43051bc9b2bb5741e80a7b38bf92b9cb",
-  "_resolved": "file:../d-11532-1672-byg3l5/package.tgz",
-  "_from": "../d-11532-1672-byg3l5/package.tgz",
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".coffee": [
-        "lib/html2haml-view.coffee",
-        "lib/html2haml.coffee"
-      ],
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
-  }
+  "dependencies": {}
 }
