@@ -8,7 +8,6 @@ module.exports = Html2haml =
   activate: (state) ->
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
-
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'html2haml:convert': => @convert()
 
@@ -20,8 +19,9 @@ module.exports = Html2haml =
     # nothing to do.
 
   convert: ->
-    editor = atom.workspace.activePaneItem
-    selection = editor.getSelection()
+    # editor = atom.workspace.activePaneItem
+    editor = atom.workspace.getActivePaneItem()
+    selection = editor.getLastSelection()
 
     html = selection.getText()
     post_data = JSON.stringify({'page': {'html': html}})
