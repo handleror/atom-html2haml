@@ -14,15 +14,11 @@ class Html2hamlView extends View
 
     html = selection.getText()
     post_data = JSON.stringify({'page': {'html': html}})
-    # post_data = unescape(encodeURIComponent(post_data))
-
 
     http = require("http")
-    #The url we want is `www.nodejitsu.com:1337/`
     options =
       host: "html2haml.heroku.com"
       path: "/api.json"
-      #This is what changes the request to a POST request
       method: "POST"
       headers:
         "Content-Type": 'text/html;charset=utf-8'
@@ -53,11 +49,3 @@ class Html2hamlView extends View
   # Tear down any state and detach
   destroy: ->
     @detach()
-
-  # toggle: ->
-  #   console.log "Html2hamlView was toggled!"
-  #
-  #   if @hasParent()
-  #     @detach()
-  #   else
-  #     atom.workspaceView.append(this)
